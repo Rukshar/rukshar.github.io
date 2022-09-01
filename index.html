@@ -1,427 +1,261 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Radio Hul Chul - Hum saath saath hai</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Facebook SDK -->
-        <script>
-            window.fbAsyncInit = function() {
-                FB.init({
-                appId            : 'your-app-id',
-                autoLogAppEvents : true,
-                xfbml            : true,
-                version          : 'v7.0'
-                });
-            };
-        </script>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top shadow p-3 mb-5 bg-white rounded" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none"><img class="img-fluid img-profile mx-auto mb-2" src="assets/img/logo.png" alt="" /></span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile" src="assets/img/logo.png" alt="" /></span>
-            </a>
-            <div class="social-icons d-none d-lg-block">
-                <a class="social-icon" href="https://wa.me/0644166003" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a class="social-icon" href="https://www.instagram.com/radiohulchul/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a class="social-icon" href="https://www.facebook.com/RadioHulchul/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="social-icon" href="mailto:info@radiohulchul.nl" target="_blank"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div><a href="https://cast.thuishosting.nl:1425/stream" class="btn btn-danger" role="button" aria-pressed="true" target="_blank" id="luisterlive"><i class="fas fa-play"></i> LUISTER LIVE</a></div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#programmas">Programma's</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#nieuws">Nieuws</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#vermais">Vermais/Felicitaties</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overlijdensberichten">Overlijdensberichten</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-                <div class="social-icons d-lg-none text-center">
-                    <a class="social-icon" href="https://wa.me/0644166003"><i class="fab fa-whatsapp"></i></a>
-                    <a class="social-icon" href="https://www.instagram.com/radiohulchul/"><i class="fab fa-instagram"></i></a>
-                    <a class="social-icon" href="https://www.facebook.com/RadioHulchul/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="social-icon" href="mailto:info@radiohulchul.nl" target="_blank"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- Home-->
-            <section class="resume-section" id="home">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Radio
-                        <span class="text-primary">Hul Chul</span>
-                    </h1>
-                    
-                    <div id="carouselContent" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active" data-interval="4000">
-                                <p class="subheading mb-5">Radio Hulchul zoals jij het wilt</p>
-                            </div>
-                            <div class="carousel-item" data-interval="4000">
-                                <p class="subheading mb-5">Radio Hulchul jaise tu maange hai</p>
-                            </div>
-                            <div class="carousel-item" data-interval="4000">
-                                <p class="subheading mb-5">Radio Hulchul a fas fa yu lobing</p>
-                            </div>
-                            <div class="carousel-item" data-interval="4000">
-                                <p class="subheading mb-5">Radio Hulchul the way you like it</p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="lead mb-5">Beste luisteraars,</p>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-                    <p class="lead mb-5">Leuk dat jullie een kijkje nemen op de website van <strong>RADIO HULCHUL</strong>.
-                        Wij zijn een gezellig, Surinaams-Hindoestaans, internet radiostation waar alles mag!
-                        Als vrienden onder elkaar, zorgen wij 24/7 voor leuke én gezellige radioprogramma's voor u. 
-                        Houd de website en social media pagina's in de gaten voor een uitgebreide programmering en nieuwtjes.                
-                        Wij wensen alle muziek liefhebbers heel veel luisterplezier!</p>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-                        <h4 class="mb-1">Download de <span class="text-primary">Radio Hulchul app</span> in de app stores en luister direct vanaf jouw smartphone of tablet</h3>
-                        <a href="#"><img class="img-fluid img-profile mx-auto mb-2 google" width="150px" src="assets/img/google-play-badge.png" alt="" /></a>
-                        <a href="#"><img class="img-fluid img-profile mx-auto mb-2" src="assets/img/Download_on_the_App_Store_Badge_NL_RGB_blk_100317.svg" alt="" /></a>
+    <title>Karaoke lijst</title>
+  </head>
+  
+  <body style="background-color:lightgrey;">
+    <div class=container>
 
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Programma's-->
-            <section class="resume-section bg-light" id="programmas">
-                <div class="resume-section-content">
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Programma's</h2>
-                        <h3 class="section-subheading text-muted">Vind hier informatie over onze programma's en live uitzendingen</h3>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/programmas/henk-thumbnail.jpg" alt="" />
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Programma's</div>
-                                    <div class="portfolio-caption-subheading text-muted">Henk Abdoel</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/programmas/harold-thumbnail.jpg" alt="" />
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Programma's</div>
-                                    <div class="portfolio-caption-subheading text-muted">Harold Abdoel</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/programmas/asif-thumbnail.jpg" alt="" />
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Programma's</div>
-                                    <div class="portfolio-caption-subheading text-muted">Asif Abdoel</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/programmas/shaqiel-thumbnail.jpg" alt="" />
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Programma's</div>
-                                    <div class="portfolio-caption-subheading text-muted">Shaqiel</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/programmas/sikandar-thumbnail.jpg" alt="" />
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Programma's</div>
-                                    <div class="portfolio-caption-subheading text-muted">Sikandar</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Nieuws-->
-            <section class="resume-section" id="nieuws">
-                <div class="resume-section-content">
-                    <h2 class="section-heading text-uppercase">Nieuws</h2>
-                    <div class="row">
-                        <div class="col-md-6">Nieuws en Evenementen
-                            <div id="carouselContent" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="d-block w-100" src="assets/img/programmas/sikandar-thumbnail.jpg" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="assets/img/programmas/sikandar-thumbnail.jpg" alt="Second slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="assets/img/programmas/sikandar-thumbnail.jpg" alt="Third slide">
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">Facebook posts
-                            <div class="fb-page" data-href="https://www.facebook.com/radiohulchul" data-tabs="timeline" data-width="500" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/radiohulchul" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/radiohulchul">Radio Hulchul-NL</a></blockquote></div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Vermais-->
-            <section class="resume-section bg-light" id="vermais">
-                <div class="resume-section-content">
-                    <h2 class="section-heading text-uppercase">Vermais/Felicitaties</h2>
-                    
-                    <div class="subheading mb-3">Wilt u voor iemand vermais aanvragen of iemand feliciteren?</div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Overlijdensberichten-->
-            <section class="resume-section" id="overlijdensberichten">
-                <div class="resume-section-content">
-                        <h2 class="section-heading text-uppercase">Overlijdensberichten</h2>
-                        <div class="subheading mb-3">Mauth ke khabar - Mritiu Samatjaar</div>
-                    <p>Lorem ipsum dolor</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Contact-->
-            <section class="resume-section bg-light" id="contact">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Contact</h2>
-                </div>
-            </section>
-        </div>
-        <!-- Footer-->
-        <footer class="footer py-10">
-                <div class="container bg-theme">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 text-lg-left">Copyright © Radio Hulchul 2020</div>
-                        <!-- <div class="col-lg-4 my-3 my-lg-0">
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div> -->
-                        <div class="col-lg-6 text-lg-right">
-                            <a class="mr-3" href="#!">Privacy Policy</a>
-                            <a href="#!">Terms of Use</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        <!-- Programma Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Lines</li>
-                                        <li>Category: Branding</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Southwest</li>
-                                        <li>Category: Website Design</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <h1>Karaoke Simud</h1>
+
+    <!-- Deelnemers Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
+      <ol class="carousel-indicators"></ol>
+      
+      <div class="carousel-inner" id="all_inner_items"></div>
+      
+    </div>
+
+    <!-- input deelnemers -->
+    <div class=row>
+      <input type="number" id="max_aantal_deelnemers" placeholder="maximaal aantal deelnemers" min=1></input>
+      <input type="button" id="max_deelnemers_button" value="Add" onclick="add_max_deelnemers();"></input>
+    </div>
+    <div class=row>
+      <h5 id=text_max_deelnemers></h5>
+    </div>
+    <div class=row>
+      <input type="text" id="deelnemer_naam"></input>
+      <input type="button" id="add_deelnemer_button" value="Add" onclick="add_deelnemer_to_array();"></input>
+    </div>
+    
+    
+    <div class=row>
+      <div class=col id=all_actieve_deelnemers>
+        <h3>Deelnemers</h3>
+      </div>
+      <div class=col id=all_reserve_deelnemers>
+        <h3>Wachtlijst</h3>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script>
+      var actieveArray = Array();
+      var reserveArray = Array();
+      var global_max_deelnemers = 0;
+      var deelnemer_naam_object = document.getElementById("deelnemer_naam");
+        deelnemer_naam_object.addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("add_deelnemer_button").click();
+          }
+        });
+
+
+      function add_max_deelnemers(){
+        console.log('global_max_deelnemers', global_max_deelnemers);
+        var max_deelnemers = document.getElementById('max_aantal_deelnemers').value;
+        document.getElementById("text_max_deelnemers").innerHTML = "Het maximaal aantal deelnemers is: " + max_deelnemers;
+        if (max_deelnemers > global_max_deelnemers){
+          global_max_deelnemers = max_deelnemers;
+          check_reservelijst();
+        }
+        else if (max_deelnemers < global_max_deelnemers){
+          global_max_deelnemers = max_deelnemers;
+          check_actievelijst();
+        }
+
+      }
+
+      function add_deelnemer_to_array(){
+        console.log(global_max_deelnemers);
+        deelnemer_naam = deelnemer_naam_object.value;
+
+        if (actieveArray.length < global_max_deelnemers){
+          actieveArray.push(deelnemer_naam);
+          alert("Deelnemer " + deelnemer_naam + " toegevoegd op nummer " + (actieveArray.length));
+          document.getElementById("deelnemer_naam").value = "";
+          console.log(actieveArray);
+          display_deelnemers("actieve_deelnemer", "all_actieve_deelnemers", actieveArray);
+          display_carrousel()
+        }
+        else{
+          reserveArray.push(deelnemer_naam);
+          alert("Deelnemer " + deelnemer_naam + " toegevoegd op nummer " + (reserveArray.length) + " in de reservelijst");
+          document.getElementById("deelnemer_naam").value = "";
+          console.log(reserveArray);
+          display_deelnemers("reserve_deelnemer", "all_reserve_deelnemers", reserveArray);
+
+        }
+        
+
+      }
+
+      function display_deelnemers(class_name, id_name, array_name){
+        const elements = document.getElementsByClassName(class_name);
+        while(elements.length > 0){
+          elements[0].parentNode.removeChild(elements[0]);
+        }
+
+        for(var i=0; i < array_name.length; i++){
+          var a = document.createElement('a');
+          
+          a.setAttribute('class', class_name);
+          a.setAttribute('href', '#'); 
+          a.setAttribute('onclick', 'delete_deelnemer(this.id)');
+          a.setAttribute('id',( class_name + '_' + (i+1)));
+
+          innerhtml = "Deelnemer " + (i+1) + ": " + array_name[i];
+          a.innerHTML = innerhtml;
+          a.appendChild(document.createElement("br"));
+          document.getElementById(id_name).appendChild(a);
+
+        }
+        
+      }
+
+
+      function delete_deelnemer(id){
+        var split_id = id.split("_");
+        var idx = parseInt(split_id[2] - 1);
+        let confirmAction = confirm("Weet je zeker dat je deze deelnemer wilt verwijderen?");
+
+        if (confirmAction){
+          if (split_id[0] == 'actieve'){
+            actieveArray.splice(idx, 1);
+            console.log(actieveArray);
+            display_deelnemers("actieve_deelnemer", "all_actieve_deelnemers", actieveArray);
+          }else{
+            reserveArray.splice(idx, 1);
+            console.log(reserveArray);
+            display_deelnemers("reserve_deelnemer", "all_reserve_deelnemers", reserveArray);
+          }
+          check_reservelijst();
+
+        }
+
+      }
+
+
+      function check_reservelijst(){
+        if (reserveArray.length > 0){
+          console.log("er zijn nog mensen op de reserve lijst");
+
+          if (actieveArray.length < global_max_deelnemers){
+            console.log('lijst is korter dan toegestaan, het verschil is: ', (global_max_deelnemers - actieveArray.length ));
+
+            while (actieveArray.length < global_max_deelnemers && reserveArray.length > 0){
+              actieveArray.push(reserveArray[0]);
+              reserveArray.splice(0, 1);
+            }
+          }
+          
+          display_deelnemers("actieve_deelnemer", "all_actieve_deelnemers", actieveArray);
+          display_deelnemers("reserve_deelnemer", "all_reserve_deelnemers", reserveArray);
+          display_carrousel();
+
+        }
+      }
+
+
+      function check_actievelijst(){
+        if (actieveArray.length > global_max_deelnemers){
+          console.log("er zijn meer mensen op de actieve lijst dan toegestaan");
+
+          
+
+          while (actieveArray.length > global_max_deelnemers){
+            reserveArray.unshift(actieveArray[actieveArray.length - 1]);
+            actieveArray.splice(-1, 1);
+          }
+        }
+          
+        display_deelnemers("actieve_deelnemer", "all_actieve_deelnemers", actieveArray);
+        display_deelnemers("reserve_deelnemer", "all_reserve_deelnemers", reserveArray);
+        display_carrousel();
+
+      }
+
+
+      function display_carrousel(){
+
+        const elements = document.getElementsByClassName("carousel-item");
+        console.log(' elements', elements);
+        while(elements.length > 0){
+          elements[0].parentNode.removeChild(elements[0]);
+        }
+
+        for (var i=0; i < actieveArray.length; i++){
+          var div = document.createElement('div');
+
+          if (i == 0){
+            div.setAttribute('class', "carousel-item active text-center p-4");
+            div.setAttribute('id',( "carousel-item" + '_' + (i+1)));
+
+          }else{
+            div.setAttribute('class', "carousel-item text-center p-4");
+            div.setAttribute('id',( "carousel-item" + '_' + (i+1)));
+
+          }
+          var next_deelnemer = actieveArray[i+1];
+          console.log((i+1));
+          console.log(actieveArray.length, 'length');
+          console.log(1>=1, ' ffech');
+          console.log('check equality', next_deelnemer >= actieveArray.length);
+          if ((i+1) >= actieveArray.length){
+            next_deelnemer = actieveArray[0];
+          }
+          
+          console.log('next' , next_deelnemer);
+          innerhtml = "<p>Nu zingt: Deelnemer " + ": " + actieveArray[i] + "</p></br> De volgende deelnemer is: " + next_deelnemer;
+          div.innerHTML = innerhtml;
+          div.appendChild(document.createElement("br"));
+          document.getElementById("all_inner_items").appendChild(div);   
+
+        }
+
+        var a_prev = document.createElement('a');
+        a_prev.setAttribute('id', 'firstchild');
+        a_prev.setAttribute('class', 'carousel-control-prev');
+        a_prev.setAttribute('href', '#carouselExampleIndicators');
+        a_prev.setAttribute('role', 'button');
+        a_prev.setAttribute('data-slide', 'prev');
+
+        inner_prev_html = "<span class='carousel-control-prev-icon' aria-hidden='true'></span> <span class='sr-only'>Previous</span>"
+        a_prev.innerHTML = inner_prev_html;
+        a_prev.appendChild(document.createElement("br"));
+        document.getElementById("all_inner_items").appendChild(a_prev);
+
+        var a_next = document.createElement('a');
+        a_next.setAttribute('id', 'firstchild');
+        a_next.setAttribute('class', 'carousel-control-next');
+        a_next.setAttribute('href', '#carouselExampleIndicators');
+        a_next.setAttribute('role', 'button');
+        a_next.setAttribute('data-slide', 'next');
+
+        inner_next_html = "<span class='carousel-control-next-icon' aria-hidden='true'></span> <span class='sr-only'>Next</span>"
+        a_next.innerHTML = inner_next_html;
+        a_next.appendChild(document.createElement("br"));
+        document.getElementById("all_inner_items").appendChild(a_next);
+      }
+
+      
+     
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>
+  </body>
 </html>
